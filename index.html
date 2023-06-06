@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./dist/img/favicon.png">
+    <title>HW-2-gulp-scss-adaptive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&_v=20230606224528" rel="stylesheet">
+    <link href="./dist/css/styles.min.css?_v=20230606224528" rel="stylesheet">
+</head>
+
+<body>
+<header class="container">
+    <nav class="nav-header">
+        <button class="nav-burger">
+            <svg class="show" width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="17" height="2" fill="white" />
+                <rect y="4" width="17" height="2" fill="white" />
+                <rect y="8" width="17" height="2" fill="white" />
+            </svg>
+            <svg class="hide" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="12.8033" y="13.7175" width="17" height="2" transform="rotate(-135 12.8033 13.7175)" fill="white" />
+                <rect x="0.782471" y="12.3033" width="17" height="2" transform="rotate(-45 0.782471 12.3033)" fill="white" />
+            </svg>
+        </button>
+        <ul class="nav-list">
+            <li class="nav-list__item"><a class="nav-list__link nav-list__link--active" href="#">HOME</a></li>
+            <li class="nav-list__item"><a class="nav-list__link" href="#">ABOUT US</a></li>
+            <li class="nav-list__item"><a class="nav-list__link" href="#">OUR JOURNAL</a></li>
+            <li class="nav-list__item"><a class="nav-list__link" href="#">PROJECTS</a></li>
+            <li class="nav-list__item"><a class="nav-list__link" href="#">NEWS</a></li>
+            <li class="nav-list__item"><a class="nav-list__link" href="#">FEATURES</a></li>
+            <li class="nav-list__item"><a class="nav-list__link" href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<main>
+    <div class="container">
+        <img class="intro-img" src="./dist/img/intro.png" alt="two tracks of rails going far">
+    </div>
+    <section class="recent-posts container">
+        <h2 class="section-title">- our Recent posts</h2>
+        <ul class="posts-list">
+            <li class="posts-list__item">
+                <img class="posts-list__img" src="./dist/img/recent-post-1.png" alt="teapot and cup">
+                <div>
+                    <h3 class="posts-list__title">Aenean Adipiscing Etiam Vestibulum</h3>
+                    <p class="posts-list__statistic">Photography, Journal / 9 Comments</p>
+                    <p class="posts-list__text">Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                </div>
+            </li>
+            <li class="posts-list__item">
+                <img class="posts-list__img" src="./dist/img/recent-post-3.png" alt="cafe table on the street">
+                <div>
+                    <h3 class="posts-list__title">Aenean Adipiscing Etiam Vestibulum</h3>
+                    <p class="posts-list__statistic">Photography, Journal / 9 Comments</p>
+                    <p class="posts-list__text">Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                </div>
+            </li>
+            <li class="posts-list__item">
+                <img class="posts-list__img" src="./dist/img/recent-post-2.png" alt="colorful umbrellas under rain">
+                <div>
+                    <h3 class="posts-list__title">Aenean Adipiscing Etiam Vestibulum</h3>
+                    <p class="posts-list__statistic">Photography, Journal / 9 Comments</p>
+                    <p class="posts-list__text">Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                </div>
+            </li>
+            <li class="posts-list__item">
+                <img class="posts-list__img" src="./dist/img/recent-post-4.png" alt="roses in the light">
+                <div>
+                    <h3 class="posts-list__title">Aenean Adipiscing Etiam Vestibulum</h3>
+                    <p class="posts-list__statistic">Photography, Journal / 9 Comments</p>
+                    <p class="posts-list__text">Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="instagram-shots">
+        <div class="container">
+            <ul class="instagram-shots-list">
+                <li class="instagram-shots-list__item--text">
+                    <h2 class="section-title">-
+                        <span class="small-title">Last</span>
+                        <span class="big-title">Latest</span> Instagram Shot<span class="big-title">s</span></h2></li>
+                <li class="instagram-shots-list__item--text">
+                    <a class="social-link" href="#">go to our instagram page -</a></li>
+                <li class="instagram-shots-list__item">
+                    <a href="#"><img src="./dist/img/insta-post-1.png" alt="bicycle"></a></li>
+                <li class="instagram-shots-list__item">
+                    <a href="#"><img src="./dist/img/insta-post-2.png" alt="gilded doorknob"></a></li>
+                <li class="instagram-shots-list__item">
+                    <a href="#"><img src="./dist/img/insta-post-3.png" alt="tangled electrical wires"></a></li>
+                <li class="instagram-shots-list__item">
+                    <a href="#"><img src="./dist/img/insta-post-4.png" alt="vintage car"></a></li>
+            </ul>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer-container">
+        <h2 class="footer__title">- get in touch with us -</h2>
+        <p class="footer__text">Maecenas faucibus molli interdum. 
+            Cras mattis consectetur purus sitor amet sed donec malesuada ullamcorper odio.
+            <span class="footer__text--big">Curabitur blandit tempus porttitor vollisky inceptos mollisestor.</span>
+        </p>
+        <nav class="nav-socials">
+            <a class="nav-socials__link nav-socials__link--rss" href="#"></a>
+            <a class="nav-socials__link nav-socials__link--fb" href="#"></a>
+            <a class="nav-socials__link nav-socials__link--tw" href="#"></a>
+            <a class="nav-socials__link nav-socials__link--drbl" href="#"></a>
+            <a class="nav-socials__link nav-socials__link--pnt" href="#"></a>
+        </nav>
+        <address>
+            <ul class="contacts-list">
+                <li>Moonshine St. 14-05 Light City /</li>
+                <li>T.<a href="tel: +00 (123) 456 78 90"> +00 (123) 456 78 90</a> /</li>
+                <li><a href="mailto: first.last@email.co">first.last@email.com</a></li>
+            </ul>
+        </address>
+    </div>    
+</footer>
+<script src="./dist/js/app.min.js?_v=20230606224528"></script>
+</body>
+</html>
