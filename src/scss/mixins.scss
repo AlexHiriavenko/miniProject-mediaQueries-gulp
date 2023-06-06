@@ -1,0 +1,50 @@
+@import "variables";
+
+$screen-size_large: 993px;          /* от 993 */
+$screen-size_medium: 481px;         /* от 481 */
+$screen-size_medium-max: 992px;     /* до 992 */
+$screen-size_small: 480px;          /* до 480 */
+$screen-size_sm: 678px;             /* до 653 */
+$screen-size_almost-small: 499px;   /* до 499 */    
+
+@mixin large() {
+    @media (min-width: $screen-size_large) {
+        @content
+    }
+};
+
+@mixin medium() {
+    @media (min-width: $screen-size_medium) {
+        @content
+    }
+};
+
+@mixin medium-max() {
+    @media (max-width: $screen-size_medium-max) {
+        @content
+    }
+};
+
+@mixin small() {
+    @media (max-width: $screen-size_small) {
+        @content
+    }
+};
+
+@mixin sm() {
+    @media (max-width: $screen-size_sm) {
+        @content
+    }
+};
+
+@mixin almost-small() {
+    @media (max-width: $screen-size_almost-small) {
+        @content
+    }
+};
+
+@mixin title-text() {
+    font-weight: 700;
+    font-size: 16px;
+    color: $general-text-color;
+}

@@ -1,0 +1,72 @@
+.footer {
+    background-color: black;
+    padding: 66px 0;
+    color: #B9B9B9;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 684px;
+    margin: 0 auto;   
+}
+
+.footer__title {
+    color: #FEFEFE;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.footer__text {
+    line-height: 28px;
+    margin-top: 20px;
+}
+
+.nav-socials {
+    margin: 35px 0;
+    &__link {
+        display: inline-block;
+        border-radius: 50%;
+        width: 34px;
+        height: 34px;
+        margin: 5px;
+    }
+    &__link--rss {
+        background: url("@img/icons/rss-icon.png") no-repeat center center;
+        border: 2px solid #F8902E;
+    }
+    &__link--fb {
+        background: url("../img/icons/facebook-icon.png") no-repeat center center;
+        border: 2px solid #39599F;
+    }
+    &__link--tw {
+        background: url("@img/icons/twitter-icon.png") no-repeat center center;
+        border: 2px solid #45B0E3;
+    }   
+    &__link--drbl {
+        background: url("@img/icons/dribbble-icon.png") no-repeat center center;
+        border: 2px solid #D97AB0;
+
+    }   
+    &__link--pnt {
+        background: url("@img/icons/pinterest-icon.png") no-repeat center center;
+        border: 2px solid #CC212C;
+    }    
+}
+
+.contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    @include small {
+        flex-direction: column;
+    }
+}
+
+@include small {
+    .footer__text--big {
+        display: none;
+    }
+} 

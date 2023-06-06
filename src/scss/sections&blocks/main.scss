@@ -1,0 +1,139 @@
+.intro-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.recent-posts {
+    padding-top: 5.5%;
+    padding-bottom: 5.5%;
+}
+
+.section-title {
+    line-height: 22px;
+    text-transform: uppercase;
+    @include title-text;
+    margin-bottom: 24px;
+}
+
+.posts-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+    row-gap: 32px;
+    &__item {
+        display: flex;
+        column-gap: 20px;
+    }
+    &__title {
+        line-height: 30px;
+        @include title-text;
+    }
+    &__statistic {
+        font-size: 12px;
+        line-height: 20px;
+        color: #7C7C7C;
+    }
+    &__text {
+        font-size: 14px;
+        line-height: 26px;
+        color: #5C5C5C;
+        margin-top: 12px;
+    }
+    &__img {
+        width: 160px;
+        object-fit: cover;
+    }
+    @include medium-max(){
+        grid-template-columns: minmax(240px, 555px);
+        &__img {
+            align-self: start;
+        }
+    }
+    @include small() {
+        &__item {
+            display: block;
+        }
+        &__text {
+            display: none;
+        }
+        &__title {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    }
+}
+
+.instagram-shots {
+    padding: 50px 0;
+    background: rgba($color: #000000, $alpha: 0.03);
+    @include small {
+        padding: 42px 0;
+    }
+}
+
+.instagram-shots-list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 285px));
+    grid-template-rows: max-content 1fr;
+    gap: 10px;
+    justify-content: space-between;
+    &__item--text {
+        grid-column: span 2;
+        &:nth-of-type(2) {
+            justify-self: end;
+        }
+        .small-title {
+            display: none;
+        }
+    }
+    img {
+        text-align: center;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .social-link {
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 700;
+}
+    @include medium-max {
+    grid-template-columns: repeat(6, minmax(58px, 125px));
+    grid-auto-rows: 0;
+    overflow-y: hidden;
+    row-gap: 8px;
+    justify-content: start;
+        &__item {
+            grid-column: span 2;
+        }
+        &__item--text {
+            grid-column: span 3;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    @include almost-small {
+        .social-link {
+            font-size: 12px;
+        }
+        h2 {
+            font-size: 14px;
+        }
+    }
+    @include small {
+        &__item--text:nth-of-type(2),
+        .big-title {
+            display: none;
+        }
+        .small-title {
+            display: inline;
+        }
+        img {
+            width: 300px;
+        }
+        grid-template-columns: minmax(160px, 300px);
+        gap: 0;
+    }
+}
