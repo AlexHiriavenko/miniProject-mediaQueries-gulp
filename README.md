@@ -1,10 +1,17 @@
-# Мини проект на сборщике Gulp c отзывчивым дизайном
+# Мини проект на сборщике Gulp c отзывчивым дизайном на scss и js;
+
+url: https://rococo-selkie-389b6c.netlify.app/
 
 Technologies:
 
 -   gulp (config and tasks setup)
 -   scss (variables, mixins, media queries)
 -   java script (burger menu)
+
+Примечание:
+
+-   главная цель была создать и настроить сборщик для последующего использования как шаблон.
+-   второстепенно - закрепить медиа-запросы и написать что-то на scss;
 
 layout: https://www.figma.com/file/OMxGUCGeJ18yGvPOL1awVQ/320px?node-id=0%3A1
 
